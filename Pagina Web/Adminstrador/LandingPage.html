@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/LandingPage.css">
+    <link rel="icon" href="/ImagenesPrincipales/logo.png">
+
+        <!-- cloudflareFooter -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- cloudflareFooter -->
+    
+    <title>Vaqui Administrador</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="vaqui">
+                <img src="/ImagenesPrincipales/logo.png" class="nav__logo" alt="logo de la empresa">
+                <!-- <h2>VAQUI</h2> -->
+                <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="#estadisticas">ESTADISTICAS</a></li>
+                <li><a href="#categoria">CATEGORIA</a></li>
+                <li><a href="#gestion">GESTION</a></li>
+                <li><a href="./Buscar empleado.html">BUSCAR</a></li>
+                <li><a class="perfil" href="">PERFIL</a></li>
+            </ul>
+        </nav>
+        <div class="header__slogan">
+            <h1>Entre Mas Bovino Mas <br> Me<span> Arrimo</span></h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+            <br> elit. Consequatur, nihil.</p>
+            <a href="./Login.html">CERRAR SESION</a>
+        </div>
+        <div class="header__slogan__images">
+            <img class="shape" src="/ImagenesPrincipales/shapeNav.jpg" alt="ilustracion fonde vaca">
+            <img class="cow" src="/ImagenesEmpleados/logoEmpleado.jpg" alt="fonde vaca">
+        </div>
+    </header>
+
+    <section class="estadisticas" id="estadisticas">
+        <div class="estadisticas__text">
+            <h2 class="estadisticas__title">Estadisticas</h2>
+            <h4>JUNIO</h4>
+            <p class="estadisticas__paragraph">Our aim is to make it quick and easy for you to access your favourite websites. 
+              Your bookmarks sync between your devices so you can access them on the go.</p>
+              <hr>
+        </div>
+
+        <div class="estadisticas__seccion">
+            <div class="estadisticas__seccion__cart" style="--i:url(/ImagenesVacas/promedioleche.jpg)">
+              <div class="cart__content">
+                <h3>Promedio de leche</h3>
+                <h4>200 Lt.</h4>
+                <hr>
+              </div>
+            </div>
+  
+            <div class="estadisticas__seccion__cart" style="--i:url(/ImagenesVacas/cantidadbovinos.jpg)">
+                <div class="cart__content">
+                  <h3>Cantidad de bovinos</h3>
+                  <h4>99 Bovinos</h4>
+                  <hr>
+                </div>
+            </div>
+  
+            <div class="estadisticas__seccion__cart" style="--i:url(/ImagenesVacas/cantiterneros.jpg)">
+                <div class="cart__content">
+                  <h3>Cantidad de terneros</h3>
+                  <h4>44 Terneros</h4> 
+                  <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="nosotros">
+        <div class="nosotros__text">
+            <h2 class="nosotros__title">Nosotros</h2>
+            <p class="nosotros__paragraph">Our aim is to make it quick and easy for you to access your favourite websites. 
+              Your bookmarks sync between your devices so you can access them on the go.</p>
+              <hr>
+        </div>
+        <div class="nosotros__firtsArticle">
+            <div class="firtsArticle__ilustracion">
+                <img src="/ImagenesPrincipales/nosotrosPrimerArticulo.svg" alt="ilustracion sobre nosotros">
+            </div>
+            <div class="firtsArticle__texto">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolore obcaecati eveniet 
+                   voluptate ipsam suscipit, temporibus quod numquam reiciendis aliquam vel distinctio aliquid 
+                   eaque est sit doloremque adipisci rem? Voluptatem?
+                </p>
+                <a href="">Boton</a>
+            </div>
+        </div>
+        <div class="nosotros__secondArticle">
+            <div class="secondArticle__texto">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolore obcaecati eveniet 
+                    voluptate ipsam suscipit, temporibus quod numquam reiciendis aliquam vel distinctio aliquid 
+                    eaque est sit doloremque adipisci rem? Voluptatem?
+                </p>
+                <a href="">Boton</a>
+            </div>
+            <div class="secondArticle__ilustracion">
+                <img src="/ImagenesPrincipales/nosotrosSegundoArticulo.svg" alt="ilustracion sobre nosotros">
+            </div>  
+        </div>
+    </section>
+
+    <section class="categoria" id="categoria">
+        <div class="categoria__text">
+            <h2 class="categoria__title">Categoria</h2>
+            <p class="categoria__paragraph">Our aim is to make it quick and easy for you to access your favourite websites. 
+              Your bookmarks sync between your devices so you can access them on the go.</p>
+              <hr>
+        </div>
+        <div class="slider__container container">
+            <img src="./assets/arrowLeft.svg" class="slider__arrow" alt="flecha izquierda slider" id="before">
+
+            <section class="slider__body slider__body--show" data-id="1">
+                <div class="slider__texts">
+                    <h2 class="subtitle">¡Hola! Mi nombre es Yury Rueda</h2>
+                    <p class="slider__review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                       Dolorem tempora ex quia nisi magni nostrum?
+                    </p>
+                </div>
+
+                <figure class="slider__picture">
+                    <img class="slider__img" src="/ImagenesEmpleados/EmpleadaSlider.jpg" alt="imagen trabajadora">
+                </figure>
+            </section>
+
+            <section class="slider__body" data-id="2">
+                <div class="slider__texts">
+                    <h2 class="subtitle">¡Hola! Mi nombre es David Mesa</h2>
+                    <p class="slider__review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                       Dolorem tempora ex quia nisi magni nostrum?
+                    </p>
+                </div>
+
+                <figure class="slider__picture">
+                    <img class="slider__img" src="/ImagenesEmpleados/EmpleadoSlider.jpg" alt="imagen trabajador">
+                </figure>
+            </section>  
+
+            <section class="slider__body" data-id="3">
+                <div class="slider__texts">
+                    <h2 class="subtitle">¡Hola! Mi nombre es Beruga Odegar</h2>
+                    <p class="slider__review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                       Dolorem tempora ex quia nisi magni nostrum?
+                    </p>
+                </div>
+
+                <figure class="slider__picture">
+                    <img class="slider__img" src="/ImagenesEmpleados/EmpleadaSlider.jpg" alt="imagen trabajadora">
+                </figure>
+            </section>
+
+            <img src="./assets/arrowRight.svg" class="slider__arrow" alt="flecha izquierda slider" id="next">
+        </div>
+    </section>
+
+
+      <div class="gestion" id="gestion">
+        <div class="gestion__text">
+            <h2 class="gestion__title">Gestion</h2>
+            <p class="gestion__paragraph">Our aim is to make it quick and easy for you to access your favourite websites. 
+              Your bookmarks sync between your devices so you can access them on the go.</p>
+              <hr>
+        </div>
+      <div class="gestion__container-card">
+        <div class="card">
+          <figure>
+            <img src="/ImagenesEmpleados/añadirEmpleado.svg" alt="imgagen añadir a un empleado">
+          </figure>
+          <div class="contenido-card">
+            <h3>Añadir empleado</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique officiis ut aliquid fugiat quo, nostrum maiores totam recusandae pariatur ipsa, sed voluptas. Ipsa aliquam enim maxime distinctio! Animi, nemo non.</p>
+            <a href="/Adminstrador/Gestion ingresar empleado.html">Ir</a>
+          </div>
+        </div>
+        <div class="card">
+          <figure>
+            <img src="/ImagenesEmpleados/buscarEmpleado.svg" alt="imagen buscar empleado">
+          </figure>
+          <div class="contenido-card">
+            <h3>Buscar empleado</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis eum dolor ratione itaque asperiores sunt modi quidem pariatur ducimus nam labore, illum doloremque. Laboriosam veniam molestias sint iure accusamus!</p>
+            <a href="./Buscar empleado.html">Ir</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="gestion__container-card">
+        <div class="card">
+          <figure>
+            <img src="/ImagenesEmpleados/actualizarEmpleado.svg" alt="imagen actualizar la informacion del empleado">
+          </figure>
+          <div class="contenido-card">
+            <h3>Actualizar empleado</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, nobis reprehenderit. Reiciendis facilis perspiciatis cumque quia atque quasi expedita repellat dolor labore corrupti cupiditate possimus voluptatem architecto qui, dolore hic!</p>
+            <a href="/Adminstrador/Gestion actualizar empleado.html">Ir</a>
+          </div>
+        </div>
+        <div class="card">
+          <figure>
+            <img src="/ImagenesEmpleados/eliminarEmpleado.svg" alt="imagen eliminar empleado">
+          </figure>
+          <div class="contenido-card">
+            <h3>Eliminar empleado</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero dicta sunt minus earum ea illo velit. Accusamus dolorem assumenda dignissimos similique at. Quibusdam sint illo, sit illum reprehenderit expedita perspiciatis?</p>
+            <a href="/Adminstrador/Gestion eliminar empleado.html">Ir</a>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <footer>
+    <div class="footer__contenedor">
+      <div class="sobre-mi">
+        <h2 class="titulos-footer">Quienes somos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima v
+          oluptatibus, ad laborum quibusdam commodi voluptatum, possimus 
+          fugit ut quod eligendi quidem explicabo consequatur accusantium 
+          cupiditate repellat tempora dolor earum molestias.</p>
+          <ul class="redes-sociales">
+            <li> <a href="https://www.facebook.com/david.mesa.399488/"> <i class="fa-brands
+            fa-facebook"></i></a></li>
+            <li> <a href="https://www.youtube.com/@davidmesa532/featured"> <i class="fa-brands
+            fa-youtube"></i></a></li>
+            <li> <a href="https://www.instagram.com/_mesiin_/"> <i class="fa-brands
+            fa-instagram"></i></a></li>
+            <li> <a href="https://www.tiktok.com/@davidmesa10?lang=es"> <i class="fa-brands
+            fa-tiktok"></i></a></li>
+          </ul>
+      </div>
+
+      <div class="footer__navegacion">
+        <h2 class="titulos-footer">Menu de navegacion</h2>
+        <ul>
+          <li><a href="#estadisticas">Estadisticas</a></li>
+          <li><a href="#categoria">Categoria</a></li>
+          <li><a href="#gestion">Gestion</a></li>
+          <li><a href="./Buscar empleado.html" target="_blank">Buscar</a></li>
+        </ul>
+      </div>
+
+
+      <div class="contactanos">
+        <h2 class="titulos-footer">Contactanos</h2>
+        <ul class="informacion-contacto">
+          <li>
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <p>Direccion: Cl. 17, Mosquera, Cundinamarca</p>
+          </li>
+          <li>
+            <span><i class="fa-solid fa-phone"></i></span>
+            <p>+57 3108766416 <br> +57 3007417776 </p>
+          </li>
+          <li>
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <p>sipuedesimaginarlospuedesprogramarlo@miseñorita.com</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      &copy; Si puedes imaginarlo, puedes programarlo.
+    </div>
+</footer> 
+
+
+    <script src="./JS/slider.js"></script>
+</body>
+</html>

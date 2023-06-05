@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/Buscar empleado.css">
+    <link rel="icon" href="/ImagenesPrincipales/logo.png">
+    <title>Buscar empleado</title>
+</head>
+<body>
+    
+    <header>
+        <div class="vaqui">
+            <a href="/Administrador/Login.html">Vaqui</a>
+        </div>
+        <div class="header-serch">
+            <input type="search" id="buscar" class="header-input" placeholder="Busca por id">
+            <div class="icone">
+                <img src="/Adminstrador/assets/lupaForm.svg" alt="icono lupa buscar">
+            </div>
+        </div>
+    </header>
+    <hr>
+
+    <section class="categoria" id="categoria">
+        <div class="categoria__text">
+            <h2 class="categoria__title">Buscar empleado</h2>
+            <p class="categoria__paragraph">Our aim is to make it quick and easy for you to access your favourite websites. 
+              Your bookmarks sync between your devices so you can access them on the go.</p>
+              <hr>
+        </div>
+        <div class="slider__container container">
+            <img src="./assets/arrowLeft.svg" class="slider__arrow" alt="flecha izquierda slider" id="before">
+
+            <section class="slider__body slider__body--show" data-id="1">
+                <div class="slider__texts">
+                    <h2 class="subtitle">¡Hola! Mi nombre es Yury Rueda</h2>
+                    <h3>N°ID</h3>
+                    <h4 class="id__empleado">1027366454</h4>
+                    <p class="slider__review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                       Dolorem tempora ex quia nisi magni nostrum?
+                    </p>
+                </div>
+
+                <figure class="slider__picture">
+                    <img class="slider__img" src="/ImagenesEmpleados/EmpleadaSlider.jpg" alt="imagen trabajadora">
+                </figure>
+            </section>
+
+            <section class="slider__body" data-id="2">
+                <div class="slider__texts">
+                    <h2 class="subtitle">¡Hola! Mi nombre es David Mesa</h2>
+                    <h3>N°ID</h3>
+                    <h4 class="id__empleado">1027366454</h4>
+                    <p class="slider__review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                       Dolorem tempora ex quia nisi magni nostrum?
+                    </p>
+                </div>
+
+                <figure class="slider__picture">
+                    <img class="slider__img" src="/ImagenesEmpleados/EmpleadoSlider.jpg" alt="imagen trabajador">
+                </figure>
+            </section>  
+
+            <section class="slider__body" data-id="3">
+                <div class="slider__texts">
+                    <h2 class="subtitle">¡Hola! Mi nombre es Beruga Odegar</h2>
+                    <h3>N°ID</h3>
+                    <h4 class="id__empleado">1027366454</h4>
+                    <p class="slider__review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                       Dolorem tempora ex quia nisi magni nostrum?
+                    </p>
+                </div>
+
+                <figure class="slider__picture">
+                    <img class="slider__img" src="/ImagenesEmpleados/EmpleadaSlider.jpg" alt="imagen trabajadora">
+                </figure>
+            </section>
+
+            <img src="./assets/arrowRight.svg" class="slider__arrow" alt="flecha izquierda slider" id="next">
+        </div>
+    </section>
+
+
+    <script src="./JS/slider.js"></script>
+</body>
+</html>
